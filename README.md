@@ -21,15 +21,17 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Screenshot
-
-![Desktop view](./images/weAreComing-Desktop.png)
-![mobile view](./images/weAreComing-mobile.png)
 
 ### Links
 
 - Solution URL: [](https://your-solution-url.com)
 - Live Site URL: [](https://your-live-site-url.com)
+
+### Screenshot
+
+![Desktop view](./images/weAreComing-Desktop.png)
+![mobile view](./images/weAreComing-mobile.png)
+
 
 ## My process
 
