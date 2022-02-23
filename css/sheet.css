@@ -98,6 +98,7 @@ input {
 }
 
 form button {
+  font-size: 1px;
   position: absolute;
   right: -7px;
   top: -4%;
