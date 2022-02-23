@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  --linearColor1: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --linearColor2: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 0%, 100%));
+}
+body,
+h1,
+p{
+    margin: 0;
+}
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input {
+    font: inherit;
+}
+
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.right-side {
+  background-image: url(/images/hero-desktop.jpg);
+  background-size: cover;
+  flex-basis: 40%;
+  background-position: center center;
+}
+
+.left-side {
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-position: center center;
+  padding: 0px 40px;
+  flex-basis: 60%;
+}
+ .mobile-background{
+    display: none;
+}
+
+.inner-container {
+  margin: 0px auto;
+  max-width: 432px;
+}
+
+.left-side .logo {
+  margin: 60px 0px 100px 0px;
+  width: 150px;
+}
+
+.heading {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--Dark-Grayish-Red);
+  line-height: 1.2;
+  letter-spacing: 12px;
+}
+
+.heading span {
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+.descritption {
+  line-height: 1.6;
+  color: var(--Desaturated-Red);
+  font-size: 16px;
+  margin: 15px 0px 30px 0px;
+}
+
+form {
+  position: relative;
+}
+input {
+  border-radius: 40px;
+  padding: 15px 30px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--Desaturated-Red);
+  height: 48px;
+  color: var(--Dark-Grayish-Red);
+}
+
+form button {
+  position: absolute;
+  right: -7px;
+  top: -4%;
+  height: 52px;
+  border-radius: 40px;
+  width: 89px;
+  background: var(--linearColor1);
+  border: 0;
+}
+
+button img {
+  margin: auto;
+}
+
+input:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+button:hover {
+  background: var(--linearColor2);
+  /* background: red; */
+}
+
+input::placeholder {
+  color: var(--Desaturated-Red);
+}
+.error-message {
+  font-size: 15px;
+  margin: 15px;
+  color: var(--Soft-Red);
+}
+
+.error-icon {
+  position: absolute;
+  top: 16%;
+  right: 25%;
+}
+
+.hidden{
+    display: none;
+}
+@media(max-width: 630px) {
+.right-side{
+    display: none;
+}
+.container{
+        overflow: hidden;
+}
+.left-side{
+    flex-basis: 100%;
+    padding: 0;
+}
+.inner-container{
+    width: 80%;
+    margin: auto;
+    padding-left: 15px ;
+    padding-right: 15px;
+    padding: 15px;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mobile-background{
+    display: block;
+width: 100%;
+}
+.left-side .logo {
+  margin: 30px 0px;
+  width: 150px;
+  
+}
+.hero-mobile{
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+}
