@@ -38,14 +38,14 @@ body {
 }
 
 .right-side {
-  background-image: url(/images/hero-desktop.jpg);
+  background-image: url(images/hero-desktop.jpg);
   background-size: cover;
   flex-basis: 40%;
   background-position: center center;
 }
 
 .left-side {
-  background-image: url(/images/bg-pattern-desktop.svg);
+  background-image: url(images/bg-pattern-desktop.svg);
   background-size: cover;
   background-position: center center;
   padding: 0px 40px;
