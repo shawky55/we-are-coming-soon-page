@@ -40,7 +40,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 ### What I learned
 - Breaking Out With Viewport Units and Calc
